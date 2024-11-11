@@ -1,9 +1,13 @@
 {
-  "name": "tigma",
+  "name": "secondrain-drawkit",
   "version": "0.1.0",
+  "author": {
+    "name": "Taruna Wahyudi",
+    "email": "wahyuditaruna97@gmail.com"
+  },
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "next dev -p 3005",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"

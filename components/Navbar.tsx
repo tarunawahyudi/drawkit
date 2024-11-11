@@ -10,6 +10,7 @@ import { Button } from "./ui/button";
 import ShapesMenu from "./ShapesMenu";
 import ActiveUsers from "./users/ActiveUsers";
 import { NewThread } from "./comments/NewThread";
+import Link from "next/link";
 
 const Navbar = ({ activeElement, imageInputRef, handleImageUpload, handleActiveElement }: NavbarProps) => {
   const isActive = (value: string | Array<ActiveElement>) =>
@@ -18,7 +19,15 @@ const Navbar = ({ activeElement, imageInputRef, handleImageUpload, handleActiveE
 
   return (
     <nav className="flex select-none items-center justify-between gap-4 bg-primary-black px-5 text-white">
-      <Image src="/assets/logo.svg" alt="FigPro Logo" width={58} height={20} />
+        <Link href={process.env.NEXT_PUBLIC_MAIN_URL! + '/documents'} className="hidden md:flex items-center gap-x-2">
+            <Image
+                src="./assets/logo-dark.svg"
+                height="40"
+                width="40"
+                alt="Logo"
+            />
+            <b>Secondbrain</b>
+        </Link>
 
       <ul className="flex flex-row">
         {navElements.map((item: ActiveElement | any) => (

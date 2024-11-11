@@ -6,9 +6,20 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import Room from "./Room";
 
 export const metadata = {
-  title: "Figma Clone",
-  description:
-    "A minimalist Figma clone using fabric.js and Liveblocks for realtime collaboration",
+  title: "Secondbrain - Draw",
+  description: "Enjoy draw with a collaboration feature",
+  icons: [
+    {
+      url: "/assets/logo-dark.svg",
+      href: "/assets/logo-dark.svg",
+    },
+  ],
+  authors: [
+    {
+      name: "Taruna Wahyudi",
+      url: "https://tarunawahyudi.github.io"
+    }
+  ]
 };
 
 const workSans = Work_Sans({
